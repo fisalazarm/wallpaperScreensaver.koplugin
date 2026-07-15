@@ -43,7 +43,7 @@ needlessly rewriting the file).
 
 On Android, make sure KOReader has the "All files" permission (Settings →
 Apps → KOReader → Permissions), otherwise the write will fail silently and
-you'll see a `Wallpaper: no se pudo escribir la imagen de portada` warning in
+you'll see a `Wallpaper: could not write the cover image` warning in
 the log.
 
 ### Usage
@@ -120,8 +120,8 @@ reescribir el archivo innecesariamente).
 
 En Android, asegúrate de que KOReader tenga el permiso "Todos los archivos"
 (Ajustes → Apps → KOReader → Permisos), o la escritura fallará
-silenciosamente y verás un aviso `Wallpaper: no se pudo escribir la imagen
-de portada` en el log.
+silenciosamente y verás un aviso `Wallpaper: could not write the cover
+image` en el log.
 
 ### Uso
 

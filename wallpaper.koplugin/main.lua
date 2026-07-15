@@ -41,7 +41,7 @@ function Wallpaper:updateWallpaper()
 
     -- Si es el mismo libro, no hacemos nada
     if last_book == file_path then
-        logger.dbg("Wallpaper: mismo libro, no se regenera la portada")
+        logger.dbg("Wallpaper: same book, cover not regenerated")
         return
     end
 
@@ -51,7 +51,7 @@ function Wallpaper:updateWallpaper()
     -- Obtener la imagen de portada del documento actual
     local cover_bb = self.ui.document:getCoverPageImage()
     if not cover_bb then
-        logger.warn("Wallpaper: este libro no tiene portada disponible")
+        logger.warn("Wallpaper: this book has no cover available")
         return
     end
 
@@ -59,7 +59,7 @@ function Wallpaper:updateWallpaper()
     cover_bb:free()
 
     if not ok then
-        logger.warn("Wallpaper: no se pudo escribir la imagen de portada")
+        logger.warn("Wallpaper: could not write the cover image")
         return
     end
 
@@ -70,7 +70,7 @@ function Wallpaper:updateWallpaper()
         wf:close()
     end
 
-    logger.info("Wallpaper: portada actualizada para " .. file_path)
+    logger.info("Wallpaper: cover updated for " .. file_path)
 end
 
 -- Entrada opcional en el menú para forzar la actualización manualmente
