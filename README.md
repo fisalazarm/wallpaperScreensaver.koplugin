@@ -20,7 +20,12 @@ reescribir el archivo innecesariamente).
 
 ## Instalación
 
-1. Descarga o clona este repositorio.
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/fisalazarm/wallpaperScreensaver.koplugin.git
+   ```
+
 2. Copia la carpeta `wallpaper.koplugin/` completa dentro de la carpeta
    `plugins/` de KOReader:
    - Android / BOOX: `/storage/emulated/0/koreader/plugins/`
